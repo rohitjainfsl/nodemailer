@@ -10,7 +10,7 @@ function App() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:6969/sendEmail", {
+      const response = await axios.post("https://nodemailer-xltk.onrender.com/sendEmail", {
         name,
         email,
         message,
